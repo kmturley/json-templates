@@ -1,0 +1,7 @@
+{
+    "view": "home.html",
+    "model": {
+        "panels": "models/panels.json",
+        "navigation": "models/navigation.json"
+    }
+}

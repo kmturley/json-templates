@@ -1,0 +1,10 @@
+[
+    {
+        "title": "Home",
+        "url": "./home"
+    },
+    {
+        "title": "Videos",
+        "url": "./videos"
+    }
+]
