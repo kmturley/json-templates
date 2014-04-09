@@ -1,0 +1,15 @@
+{% set items = loadJSON('../json/navigation.json') %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Json templates</title>
+</head>
+<body>
+    <h2>navigation</h2>
+    <ul>
+    {% for item in items %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
+    </ul>

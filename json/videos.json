@@ -1,7 +1,0 @@
-{
-    "view": "videos.html",
-    "model": {
-        "panels": "models/panels2.json",
-        "navigation": "models/navigation.json"
-    }
-}

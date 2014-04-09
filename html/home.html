@@ -1,24 +1,11 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>Json templates</title>
-</head>
-<body>
-    <ul>
-    {% for item in model.navigation %}
-        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-    {% endfor %}
-    </ul>
-    
-    <ul>
-    {% for item in model.panels %}
-        <li>{{ item.title }}</li>
-    {% endfor %}
-    </ul>
+{% include 'includes/header.html' %}
+{% set items = loadJSON('../json/panels.json') %}
 
-    <script>
-        var model = {{ model | json_encode() | raw }};
-    </script>
-</body>
-</html>
+<h2>panels</h2>
+<ul>
+{% for item in items %}
+    <li>{{ item.title }}</li>
+{% endfor %}
+</ul>
+
+{% include 'includes/footer.html' %}
