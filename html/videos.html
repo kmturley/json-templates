@@ -1,0 +1,9 @@
+{% include 'includes/header.html' %}
+{% set items = loadJSON('../json/panels2.json') %}
+
+<h2>panels2</h2>
+{% for item in items %}
+    <h3>{{ item.title }}</h3>
+{% endfor %}
+
+{% include 'includes/footer.html' %}
